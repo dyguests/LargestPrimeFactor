@@ -3,10 +3,13 @@ import kotlin.math.max
 object Main {
     @JvmStatic
     fun main(args: Array<String>) {
-        findLargestPrimeFactorAlgorithm(1)
-        findLargestPrimeFactorAlgorithm(8)
-        findLargestPrimeFactorAlgorithm(10)
+//        findLargestPrimeFactorAlgorithm(1)
+//        findLargestPrimeFactorAlgorithm(8)
+//        findLargestPrimeFactorAlgorithm(10)
+        val start = System.currentTimeMillis()
         findLargestPrimeFactorAlgorithm(600851475143)
+        val end = System.currentTimeMillis()
+        println("cost:${end - start}ms")
     }
 
     private fun findLargestPrimeFactorAlgorithm(num: Long) {
